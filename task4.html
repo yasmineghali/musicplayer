@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="task4.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+   <div class="container">  
+    <div class="top_bar">
+        <span>Now Playing</span>
+        <i class="fa-solid fa-bars" id="more_music" ></i>
+       
+    </div>
+    <div class="imag">
+       <img src="" alt="">
+    </div>
+    <div class="song_det">
+        <p class="name"></p>
+        <p class="artist"></p>
+    </div>
+    <div class="prog">
+        <div class="prog_bar">
+           
+           <audio src="" id="main_aud"></audio>
+       </div>
+        <div class="song_timer">
+            <span class="current_time">0:00</span>
+            <span class="max_time">0:00</span>
+        </div>
+    </div>
+    <div class="controls">
+        <i class="fas fa-backward" id="prev" ></i>
+         <div class="play_pause">
+            <i class="fa-solid fa-play"></i>
+         </div>
+         <i class="fa-solid fa-forward next" id="next"></i>
+         
+    </div>
+    <div class="music_list">
+        <div class="header">
+            <div class="row">
+                <i class="fa-solid fa-music"></i>
+                <span>Music List</span>
+            </div>
+            <i id="close" class="fa-solid fa-xmark"></i>
+        </div>
+        <ul>
+           
+        </ul>
+    </div>
+   </div> 
+
+
+    <script src="task4.js"></script>
+    <script src="songList.js"></script>
+</body>
+</html>
